@@ -1,7 +1,7 @@
 function volume_sphere() {
     //Write your code here
   // Define the volume_sphere function
-function volume_sphere() {
+
     // Get the value of the Radius field
     const radius = parseFloat(document.getElementById("radius").value);
 

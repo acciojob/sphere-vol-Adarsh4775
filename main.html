@@ -13,7 +13,31 @@ label,input{display:block;}
 	<form action="" method="post" id="MyForm">
 	<label for="radius">Radius</label><input type="text" name="radius" id="radius" required>
 	<label for="volume">Volume</label><input type="text" name="volume" id="volume">
-	<input type="submit" value="Calculate" id="submit">    </form>
-	<script type="text/javascript" src="./script.js"></script>
+	<input type="submit" value="Calculate" id="submit">   
+	
+	</form>
+	
+	<script type="text/javascript" >
+		function volume_sphere() {
+   
+    const radius = parseFloat(document.getElementById("radius").value);
+
+    // Check if the input is a valid number
+    if (isNaN(radius)) {
+        // If not a valid number, display an error message
+        document.getElementById("volume").value = "Please enter a valid radius.";
+    } else {
+        // Calculate the volume of the sphere
+        const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+
+        // Display the calculated volume in the volume field
+        document.getElementById("volume").value = volume.toFixed(2); // Limit to 2 decimal places
+    }
+}
+
+} 
+
+
+	</script>
 </body>
 </html>

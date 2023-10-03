@@ -3,7 +3,7 @@ function volume_sphere() {
   // Define the volume_sphere function
 function volume_sphere() {
     // Get the value of the Radius field
-    const radius = parseFloat(document.getElementById("Radius").value);
+    const radius = parseFloat(document.getElementById("radius").value);
 
     // Check if the input is a valid number
     if (isNaN(radius)) {
@@ -19,5 +19,4 @@ function volume_sphere() {
 }
 
 } 
-
 

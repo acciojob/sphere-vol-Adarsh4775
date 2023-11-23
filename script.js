@@ -12,8 +12,14 @@ function volume_sphere(){
 
 	let rValue = parseFloat(radius.value);
 
-	let volValue = (4/3) * Math.PI * Math.pow(rValue,3);
-
-	 volume.value = volValue.toFixed(2);
-	
+	if(!isNaN(rValue))
+	{
+		
+		let volValue = (4/3) * Math.PI * Math.pow(rValue,3);
+      volume.value = volValue.toFixed(4);
+	}
+	else
+	{
+	volume.value="NaN"; 
+	}
 }

@@ -14,6 +14,6 @@ function volume_sphere(){
 
 	let volValue = (4/3) * Math.PI * Math.pow(rValue,3);
 
-	 volume.value = volValue;
+	 volume.value = volValue.toFixed(2);
 	
 }
